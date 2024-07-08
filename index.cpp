@@ -12,4 +12,13 @@ unsigned long long factorial(int n) {
     return n * factorial(n - 1);
 }
 
-
+int main() {
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+    unsigned long long fact = factorial(number);
+    if (number >= 0) {
+        cout << "The factorial of " << number << " is " << fact << endl;
+    }
+    return 0;
+}
